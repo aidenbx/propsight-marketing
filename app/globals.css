@@ -1,26 +1,100 @@
 @import "tailwindcss";
 
+/* ─── PropSight Design Tokens ─────────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --navy:           #1A3A5C;
+  --teal:           #1D9E75;
+  --teal-dark:      #0F6E56;
+  --teal-light:     #E6FFF7;
+  --amber:          #EF9F27;
+  --red:            #E24B4A;
+  --bg:             #F5F9FF;
+  --white:          #FFFFFF;
+  --border:         #E4ECF7;
+  --text-primary:   #1A3A5C;
+  --text-secondary: #636366;
+  --text-muted:     #9CA3AF;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ─── Tailwind v4 custom colours + shadows ─────────────────────────────────── */
+@theme {
+  --color-navy:       #1A3A5C;
+  --color-teal:       #1D9E75;
+  --color-teal-dark:  #0F6E56;
+  --color-teal-light: #E6FFF7;
+  --color-amber:      #EF9F27;
+  --color-ps-red:     #E24B4A;
+  --color-bg:         #F5F9FF;
+  --color-border:     #E4ECF7;
+
+  --shadow-card:       0 1px 3px rgba(0,0,0,0.06);
+  --shadow-card-hover: 0 8px 24px rgba(26,58,92,0.10);
+  --shadow-phone:      0 32px 64px rgba(26,58,92,0.20);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ─── Base ──────────────────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
 }
+
+* { box-sizing: border-box; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Marquee ──────────────────────────────────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 20s linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ─── Float ────────────────────────────────────────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ─── Pulse dot ────────────────────────────────────────────────────────────── */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(0.85); }
+}
+.animate-pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* ─── H1 underline ─────────────────────────────────────────────────────────── */
+@keyframes underline-grow {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+.underline-grow {
+  position: relative;
+  display: inline-block;
+}
+.underline-grow::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--teal);
+  border-radius: 3px;
+  transform-origin: left;
+  animation: underline-grow 400ms 600ms ease forwards;
+  transform: scaleX(0);
 }
