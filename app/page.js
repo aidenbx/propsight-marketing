@@ -7,6 +7,7 @@ import HowItWorks from '@/components/HowItWorks';
 import Features from '@/components/Features';
 import Pricing from '@/components/Pricing';
 import Testimonials from '@/components/Testimonials';
+import AudienceSection from '@/components/AudienceSection';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
@@ -19,6 +20,7 @@ export default function Home() {
       <main>
         <Hero />
         <SocialProof />
+        <AudienceSection />
         <HowItWorks />
         <Features />
         <Pricing billingCycle={billingCycle} onToggle={setBillingCycle} />

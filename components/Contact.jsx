@@ -157,6 +157,10 @@ export default function Contact() {
                   {status === 'loading' ? 'Sending…' : status === 'success' ? 'Message sent!' : 'Send message →'}
                 </button>
               </form>
+              <p style={{ fontSize: 12, color: '#9CA3AF', textAlign: 'center', marginTop: 16 }}>
+                By submitting this form you agree to our{' '}
+                <a href="/privacy" style={{ color: '#1D9E75', textDecoration: 'none' }}>Privacy Policy</a>.
+              </p>
             </div>
           </AnimateOnScroll>
 

@@ -2,9 +2,9 @@ const PEOPLE = [
   { initials: 'SC', name: 'Sarah C.',  location: 'Brisbane' },
   { initials: 'MR', name: 'Marcus R.', location: 'Gold Coast' },
   { initials: 'JL', name: 'Jamie L.',  location: 'Auckland' },
-  { initials: 'TP', name: 'Tanya P.',  location: 'Brisbane Northside' },
+  { initials: 'TP', name: 'Tanya P.',  location: 'Sydney' },
   { initials: 'AK', name: 'Alex K.',   location: 'Wellington' },
-  { initials: 'BN', name: 'Ben N.',    location: 'Sunshine Coast' },
+  { initials: 'BN', name: 'Ben N.',    location: 'Christchurch' },
 ];
 
 function PersonItem({ initials, name, location }) {

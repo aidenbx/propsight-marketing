@@ -57,9 +57,9 @@ const COLUMNS = [
   {
     heading: 'Legal',
     links: [
-      { label: 'Privacy Policy',   href: '#' },
-      { label: 'Terms of Service', href: '#' },
-      { label: 'Cookie Policy',    href: '#' },
+      { label: 'Privacy Policy',   href: '/privacy' },
+      { label: 'Terms of Service', href: '/terms' },
+      { label: 'Cookie Policy',    href: '/privacy#cookies' },
     ],
   },
 ];
@@ -140,11 +140,21 @@ export default function Footer() {
           display: 'flex', justifyContent: 'space-between',
           alignItems: 'center', flexWrap: 'wrap', gap: 12,
         }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
+            <span style={{ color: 'rgba(255,255,255,0.35)', fontSize: 12 }}>
+              © 2026 PropSight Pty Ltd. All rights reserved.
+            </span>
+            <a href="/privacy" style={{ color: 'rgba(255,255,255,0.35)', fontSize: 12, textDecoration: 'none', transition: 'color 150ms ease' }}
+              onMouseEnter={e => e.currentTarget.style.color = 'rgba(255,255,255,0.65)'}
+              onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.35)'}
+            >Privacy</a>
+            <a href="/terms" style={{ color: 'rgba(255,255,255,0.35)', fontSize: 12, textDecoration: 'none', transition: 'color 150ms ease' }}
+              onMouseEnter={e => e.currentTarget.style.color = 'rgba(255,255,255,0.65)'}
+              onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.35)'}
+            >Terms</a>
+          </div>
           <span style={{ color: 'rgba(255,255,255,0.35)', fontSize: 12 }}>
-            © 2026 PropSight Pty Ltd. All rights reserved.
-          </span>
-          <span style={{ color: 'rgba(255,255,255,0.35)', fontSize: 12 }}>
-            Built in Brisbane 🇦🇺
+            Built in Australia 🇦🇺
           </span>
         </div>
       </div>

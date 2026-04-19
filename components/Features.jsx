@@ -55,7 +55,7 @@ const FEATURES = [
   {
     tone: 'navy',
     title: 'AU + NZ Coverage',
-    body: 'Monitor Brisbane, Auckland, Wellington, Sydney, and all major Australian and New Zealand markets.',
+    body: 'Monitor suburbs across Australia and New Zealand — from Brisbane and Sydney to Auckland and Wellington.',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A3A5C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />

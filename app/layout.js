@@ -9,8 +9,8 @@ const inter = Inter({
 
 export const metadata = {
   title: 'PropSight — AI Property Scout for Australia & New Zealand',
-  description: "PropSight scans the property market every morning, scores every listing with AI, and delivers your personalised digest before you've had your coffee. Free to start.",
-  keywords: 'property search australia, AI property, brisbane property, investment property app, daily property digest',
+  description: 'PropSight helps first home buyers and investors across Australia and New Zealand find better properties faster. AI-scored daily digest, capital growth signals, and inspection scheduling.',
+  keywords: 'property search australia, AI property, first home buyer australia, property investor nz, oceania property search, auckland property, sydney property, investment property app, daily property digest',
   openGraph: {
     title: 'PropSight — Find your next property smarter',
     description: 'AI-powered daily property digest for AU & NZ buyers.',
