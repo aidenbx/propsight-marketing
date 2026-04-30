@@ -104,10 +104,10 @@ export default function AudienceSection() {
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 20, flex: 1 }}>
-              <CheckItem text="Capital growth signals from live news and infrastructure data" />
-              <CheckItem text="AI-scored listings ranked by investment potential" />
-              <CheckItem text="Suburb demand scores and 12-month growth trends" />
-              <CheckItem text="AU + NZ dual market coverage in one digest" />
+              <CheckItem text="📡 Infrastructure signals — get alerted when new train lines, rezoning approvals or major employers are announced in your target suburbs before prices move" />
+              <CheckItem text="📈 Suburb momentum scores — track which suburbs are Rising, Peak, Declining or in Recovery" />
+              <CheckItem text="💰 Rental yield estimates on every listing" />
+              <CheckItem text="🔍 Suburb comparison tool — compare up to 3 suburbs side by side across price, yield, schools and transport" />
             </div>
 
             <a href={`${APP_URL}/register`} rel="noopener noreferrer"

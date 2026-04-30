@@ -52,13 +52,14 @@ export default function Pricing({ billingCycle, onToggle }) {
       annualPrice: '$0',
       sub: 'Always free',
       features: [
-        { included: true,  text: '5 properties per day' },
-        { included: true,  text: '3 suburbs monitored' },
-        { included: true,  text: 'Daily digest' },
-        { included: false, text: 'AI property scoring' },
-        { included: false, text: 'Capital growth signals' },
+        { included: true,  text: '5 property matches per day' },
+        { included: true,  text: '3 suburb radius' },
+        { included: true,  text: 'Weekly digest email' },
+        { included: true,  text: 'Basic AI match scoring' },
+        { included: true,  text: 'AU and NZ markets' },
+        { included: false, text: 'Investment goal customisation' },
         { included: false, text: 'Inspection scheduler' },
-        { included: false, text: 'AU + NZ coverage' },
+        { included: false, text: 'Infrastructure signals' },
       ],
       cta: 'Get started free',
       dark: false,
@@ -67,37 +68,41 @@ export default function Pricing({ billingCycle, onToggle }) {
     {
       id: 'pro',
       label: 'Pro',
-      monthlyPrice: '$39',
-      annualPrice: '$31',
-      annualSub: 'billed $374/yr',
-      sub: 'Cancel anytime',
+      monthlyPrice: '$19',
+      annualPrice: '$15',
+      annualSub: 'billed $182/yr',
+      sub: '14-day free trial',
       badge: 'Most popular',
       features: [
-        { included: true,  text: 'Full daily digest' },
-        { included: true,  text: '8 suburbs monitored' },
-        { included: true,  text: 'AI property scoring' },
-        { included: true,  text: 'Capital growth signals' },
+        { included: true,  text: '20 property matches per day' },
+        { included: true,  text: 'Unlimited suburb radius' },
+        { included: true,  text: 'Daily digest at 6am' },
+        { included: true,  text: 'AI scoring weighted to your goals' },
         { included: true,  text: 'Inspection scheduler' },
-        { included: true,  text: 'AU + NZ coverage' },
-        { included: false, text: 'Advanced analytics' },
+        { included: true,  text: 'Investment goal customisation' },
+        { included: true,  text: 'Suburb comparison tool' },
+        { included: true,  text: 'Infrastructure signals' },
+        { included: true,  text: 'Borrowing power calculator' },
       ],
-      cta: 'Get Pro',
+      cta: 'Start free trial',
       dark: true,
       featured: true,
     },
     {
       id: 'premium',
       label: 'Premium',
-      monthlyPrice: '$79',
-      annualPrice: '$63',
-      sub: 'Serious investors',
+      monthlyPrice: '$39',
+      annualPrice: '$31',
+      annualSub: 'billed $374/yr',
+      sub: '14-day free trial',
       features: [
+        { included: true, text: '30 property matches per day' },
         { included: true, text: 'Everything in Pro' },
-        { included: true, text: '20 suburbs monitored' },
-        { included: true, text: 'Advanced analytics' },
-        { included: true, text: 'Predictive insights' },
-        { included: true, text: 'Priority data refresh' },
-        { included: true, text: 'Early feature access' },
+        { included: true, text: 'Capital gains news feed' },
+        { included: true, text: 'Suburb momentum scores' },
+        { included: true, text: 'Priority AI scoring' },
+        { included: true, text: 'Portfolio tracker (coming soon)' },
+        { included: true, text: 'Priority support' },
       ],
       cta: 'Get Premium',
       dark: false,
@@ -178,6 +183,9 @@ export default function Pricing({ billingCycle, onToggle }) {
                     </span>
                     <span style={{ fontSize: 18, color: card.dark ? 'rgba(255,255,255,0.6)' : '#9CA3AF' }}>/mo</span>
                   </div>
+                  <div style={{ fontSize: 11, fontWeight: 600, color: card.dark ? 'rgba(255,255,255,0.4)' : '#9CA3AF', marginTop: 2, letterSpacing: '0.5px' }}>
+                    AUD
+                  </div>
 
                   {annual && card.annualSub && (
                     <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.5)', marginTop: 2 }}>{card.annualSub}</div>
@@ -228,6 +236,18 @@ export default function Pricing({ billingCycle, onToggle }) {
             );
           })}
         </div>
+
+        {/* Footer note */}
+        <AnimateOnScroll delay={0.3}>
+          <div style={{ textAlign: 'center', marginTop: 40 }}>
+            <p style={{ fontSize: 14, color: '#636366', margin: '0 0 6px', fontWeight: 500 }}>
+              No lock-in contracts · Cancel anytime · 14-day free trial on all paid plans
+            </p>
+            <p style={{ fontSize: 12, color: '#9CA3AF', margin: 0 }}>
+              Prices in AUD. NZ users billed in NZD at current exchange rate.
+            </p>
+          </div>
+        </AnimateOnScroll>
       </div>
     </section>
   );

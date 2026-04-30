@@ -78,7 +78,7 @@ export default function Navbar() {
           <Logo />
 
           {/* Desktop nav links */}
-          <div style={{ display: 'flex', gap: 32, alignItems: 'center' }}
+          <div style={{ gap: 32, alignItems: 'center' }}
                className="hidden lg:flex">
             {NAV_LINKS.map(link => (
               <button key={link.label} onClick={() => scrollTo(link.href)}
@@ -131,7 +131,7 @@ export default function Navbar() {
               className="flex lg:hidden"
               style={{
                 background: 'none', border: 'none', cursor: 'pointer',
-                padding: 6, display: 'flex', flexDirection: 'column',
+                padding: 6, flexDirection: 'column',
                 gap: 5, justifyContent: 'center', alignItems: 'center',
               }}
               aria-label="Toggle menu"
