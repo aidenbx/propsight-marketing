@@ -1,10 +1,15 @@
 const PEOPLE = [
-  { initials: 'SC', name: 'Sarah C.',  location: 'Brisbane' },
-  { initials: 'MR', name: 'Marcus R.', location: 'Gold Coast' },
-  { initials: 'JL', name: 'Jamie L.',  location: 'Auckland' },
-  { initials: 'TP', name: 'Tanya P.',  location: 'Sydney' },
-  { initials: 'AK', name: 'Alex K.',   location: 'Wellington' },
-  { initials: 'BN', name: 'Ben N.',    location: 'Christchurch' },
+  { initials: 'CB', name: 'Cayley B.',  location: 'Brisbane' },
+  { initials: 'AB', name: 'Aria B.',    location: 'Brisbane' },
+  { initials: 'JB', name: 'Jeremy B.',  location: 'Brisbane' },
+  { initials: 'JG', name: 'James G.',   location: 'Gold Coast' },
+  { initials: 'CB', name: 'Charles B.', location: 'Brisbane' },
+  { initials: 'JG', name: 'Jack G.',    location: 'Sydney' },
+  { initials: 'CS', name: 'Cole S.',    location: 'Brisbane' },
+  { initials: 'HC', name: 'Harry C.',   location: 'Auckland' },
+  { initials: 'JS', name: 'Jared S.',   location: 'Brisbane' },
+  { initials: 'MC', name: 'Mia C.',     location: 'Melbourne' },
+  { initials: 'LV', name: 'Luke V.',    location: 'Brisbane' },
 ];
 
 function PersonItem({ initials, name, location }) {

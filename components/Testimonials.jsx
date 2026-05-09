@@ -3,25 +3,25 @@ import AnimateOnScroll from './ui/AnimateOnScroll';
 
 const TESTIMONIALS = [
   {
-    quote: "Finally an app that does the research for me. I used to spend Sunday afternoons scrolling through Domain — now I get a ranked list every morning.",
-    name: 'Sarah C.',
+    quote: "I used to spend hours every weekend going through listings that were never quite right. PropSight sends me the ones that actually match what I want — I only look at properties worth my time now.",
+    name: 'Cayley B.',
     role: 'First home buyer',
     location: 'Brisbane',
-    initials: 'SC',
+    initials: 'CB',
   },
   {
-    quote: "The suburb growth signals are genuinely useful. Found a property in Cannon Hill before anyone else because of the rail upgrade alert.",
-    name: 'Marcus R.',
+    quote: "The infrastructure signals are the feature I didn't know I needed. Found out about a rezoning approval in my target suburb before it hit the news — that kind of intel is worth more than the subscription alone.",
+    name: 'Charles B.',
     role: 'Property investor',
-    location: 'Gold Coast',
-    initials: 'MR',
+    location: 'Brisbane',
+    initials: 'CB',
   },
   {
-    quote: "I was sceptical about AI property scoring but the match scores are surprisingly accurate. Saved me from two properties that looked great but flagged poorly.",
-    name: 'Jamie L.',
+    quote: "I was hesitant about AI scoring properties but it genuinely understands what I'm looking for. Set my goals around good schools and low crime and the matches are spot on every morning.",
+    name: 'Aria B.',
     role: 'Buyer',
-    location: 'Auckland',
-    initials: 'JL',
+    location: 'Brisbane',
+    initials: 'AB',
   },
 ];
 
