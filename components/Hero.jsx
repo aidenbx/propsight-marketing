@@ -29,7 +29,7 @@ function MiniPropertyCard({ score, price, address, tags, meta }) {
       borderRadius: 8, padding: 10, marginBottom: 6,
     }}>
       <div style={{ position: 'relative', height: 60, background: '#E4ECF7', borderRadius: 6, marginBottom: 8 }}>
-        <span style={{ position: 'absolute', top: 4, left: 4, background: '#fff', borderRadius: 4, padding: '2px 6px', fontSize: 8, fontWeight: 600, color: '#636366' }}>domain.com.au</span>
+        <span style={{ position: 'absolute', top: 4, left: 4, background: '#fff', borderRadius: 4, padding: '2px 6px', fontSize: 8, fontWeight: 600, color: '#636366' }}>Live listing</span>
         <span style={{ position: 'absolute', top: 4, right: 4, background: '#1D9E75', color: '#fff', borderRadius: 4, padding: '2px 6px', fontSize: 8, fontWeight: 700 }}>{score}</span>
       </div>
       <div style={{ fontSize: 13, fontWeight: 700, color: '#1A3A5C' }}>{price}</div>
@@ -64,7 +64,7 @@ const AUDIENCE_CONTENT = {
   },
   investor: {
     trustItem1: 'Capital growth signals included',
-    stat1: { num: '6am', label: 'daily digest' },
+    stat1: { num: '6–9am', label: 'your digest time' },
   },
 };
 
@@ -105,7 +105,7 @@ export default function Hero() {
               color: '#1D9E75', fontSize: 11, fontWeight: 700,
               letterSpacing: '1.2px', padding: '5px 14px', borderRadius: 20,
             }}>
-              AI-POWERED · AUSTRALIA & NEW ZEALAND
+              AI-POWERED · AUSTRALIA
             </span>
           </motion.div>
 
@@ -130,7 +130,7 @@ export default function Hero() {
               color: '#636366', maxWidth: 520, lineHeight: 1.65, marginTop: 24,
             }}
           >
-            Whether you&apos;re a first home buyer navigating the most competitive market in decades, or an investor hunting capital growth signals — PropSight does the research so you don&apos;t have to.
+            Most buyers lose their weekends buried across multiple property sites — inspecting homes that never quite fit. PropSight does the searching, scoring and scheduling so your time goes into the right properties, not all of them.
           </motion.p>
 
           {/* Audience toggle */}
@@ -209,7 +209,7 @@ export default function Hero() {
           >
             {[
               content.trustItem1,
-              'Daily 6am property digest',
+              'Daily morning property digest',
               'AI-scored for your criteria',
             ].map(text => (
               <div key={text} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
@@ -226,7 +226,7 @@ export default function Hero() {
             {[
               content.stat1,
               { num: '8',   label: 'Suburbs monitored' },
-              { num: '6am', label: 'Daily digest' },
+              { num: 'Your time', label: 'Daily digest' },
             ].map((s, i, arr) => (
               <div key={s.label} style={{
                 display: 'flex', flexDirection: 'column',
@@ -266,7 +266,7 @@ export default function Hero() {
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" /></svg>
                   <span style={{ fontSize: 11, fontWeight: 700, color: '#1A3A5C' }}>Tuesday digest</span>
                 </div>
-                <span style={{ fontSize: 9, color: '#1D9E75', fontWeight: 600 }}>8 new · AU &amp; NZ</span>
+                <span style={{ fontSize: 9, color: '#1D9E75', fontWeight: 600 }}>8 new · Australia</span>
               </div>
               <div style={{ padding: '0 8px 8px' }}>
                 <MiniPropertyCard score="91" price="$1,050,000" address="44 Norman Ave, Norman Park" tags={[{ text: '+18%', type: 'green' }, { text: 'River views', type: 'blue' }]} meta="4bd 3ba · Sat 9:30am" />
@@ -300,7 +300,7 @@ export default function Hero() {
               <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" strokeWidth="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9" /></svg>
                 <div>
-                  <div style={{ fontSize: 12, fontWeight: 600, color: '#1A3A5C', whiteSpace: 'nowrap' }}>6am digest ready</div>
+                  <div style={{ fontSize: 12, fontWeight: 600, color: '#1A3A5C', whiteSpace: 'nowrap' }}>Morning digest ready</div>
                   <div style={{ fontSize: 10, color: '#9CA3AF' }}>Just now</div>
                 </div>
               </div>

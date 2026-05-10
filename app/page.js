@@ -9,6 +9,7 @@ import Pricing from '@/components/Pricing';
 import Testimonials from '@/components/Testimonials';
 import AudienceSection from '@/components/AudienceSection';
 import Contact from '@/components/Contact';
+import SignalTicker from '@/components/SignalTicker';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
         <Pricing billingCycle={billingCycle} onToggle={setBillingCycle} />
         <Testimonials />
         <Contact />
+        <SignalTicker />
       </main>
       <Footer />
     </>

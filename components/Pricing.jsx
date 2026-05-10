@@ -56,7 +56,7 @@ export default function Pricing({ billingCycle, onToggle }) {
         { included: true,  text: '3 suburb radius' },
         { included: true,  text: 'Weekly digest email' },
         { included: true,  text: 'Basic AI match scoring' },
-        { included: true,  text: 'AU and NZ markets' },
+        { included: true,  text: 'Australian property market' },
         { included: false, text: 'Investment goal customisation' },
         { included: false, text: 'Inspection scheduler' },
         { included: false, text: 'Infrastructure signals' },
@@ -76,7 +76,7 @@ export default function Pricing({ billingCycle, onToggle }) {
       features: [
         { included: true,  text: '20 property matches per day' },
         { included: true,  text: 'Unlimited suburb radius' },
-        { included: true,  text: 'Daily digest at 6am' },
+        { included: true,  text: 'Daily morning digest (you choose the time)' },
         { included: true,  text: 'AI scoring weighted to your goals' },
         { included: true,  text: 'Inspection scheduler' },
         { included: true,  text: 'Investment goal customisation' },
@@ -244,7 +244,7 @@ export default function Pricing({ billingCycle, onToggle }) {
               No lock-in contracts · Cancel anytime · 14-day free trial on all paid plans
             </p>
             <p style={{ fontSize: 12, color: '#9CA3AF', margin: 0 }}>
-              Prices in AUD. NZ users billed in NZD at current exchange rate.
+              Prices in AUD.
             </p>
           </div>
         </AnimateOnScroll>
