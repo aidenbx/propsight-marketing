@@ -1,4 +1,4 @@
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.propsight.com.au';
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.vestio.com.au';
 
 function Logo() {
   return (
@@ -10,8 +10,8 @@ function Logo() {
         <line x1="13" y1="25" x2="27" y2="25" stroke="rgba(255,255,255,0.4)" strokeWidth="1.2" />
       </svg>
       <span style={{ fontSize: 20, fontWeight: 800 }}>
-        <span style={{ color: '#fff' }}>Prop</span>
-        <span style={{ color: '#1D9E75' }}>Sight</span>
+        <span style={{ color: '#fff' }}>Vest</span>
+        <span style={{ color: '#1D9E75' }}>io</span>
       </span>
     </div>
   );
@@ -79,7 +79,7 @@ export default function Footer() {
               Find smarter. Move faster.
             </p>
             <div style={{ display: 'flex', gap: 10, marginTop: 20 }}>
-              <FooterSocialIcon href="https://instagram.com/propsightau">
+              <FooterSocialIcon href="https://instagram.com/vestioau">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="2" y="2" width="20" height="20" rx="5" /><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
                 </svg>
@@ -140,7 +140,7 @@ export default function Footer() {
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
             <span style={{ color: 'rgba(255,255,255,0.35)', fontSize: 12 }}>
-              © 2026 PropSight Pty Ltd. All rights reserved.
+              © 2026 Vestio Pty Ltd. All rights reserved.
             </span>
             <a href="/privacy" style={{ color: 'rgba(255,255,255,0.35)', fontSize: 12, textDecoration: 'none', transition: 'color 150ms ease' }}
               onMouseEnter={e => e.currentTarget.style.color = 'rgba(255,255,255,0.65)'}

@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Privacy Policy — PropSight',
-  description: 'PropSight privacy policy. How we collect, use, and protect your data.',
+  title: 'Privacy Policy — Vestio',
+  description: 'Vestio privacy policy. How we collect, use, and protect your data.',
 };
 
 const HEADING_STYLE = {
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
           color: '#1D9E75', fontSize: 14, textDecoration: 'none',
           fontWeight: 500,
         }}>
-          ← Back to PropSight
+          ← Back to Vestio
         </a>
 
         {/* Page heading */}
@@ -42,8 +42,8 @@ export default function PrivacyPage() {
         <p style={{ fontSize: 14, color: '#9CA3AF', marginTop: 8 }}>Last updated: April 2026</p>
 
         <Section title="1. Who we are">
-          <p>PropSight is an AI-powered property search tool for Australian and New Zealand property buyers and investors. We are operated by PropSight (ABN pending registration), based in Brisbane, Queensland, Australia.</p>
-          <p style={{ marginTop: 12 }}>Contact: <a href="mailto:hello@propsight.com.au" style={{ color: '#1D9E75' }}>hello@propsight.com.au</a></p>
+          <p>Vestio is an AI-powered property search tool for Australian property buyers and investors. We are operated by Vestio (ABN pending registration), based in Brisbane, Queensland, Australia.</p>
+          <p style={{ marginTop: 12 }}>Contact: <a href="mailto:hello@vestio.com.au" style={{ color: '#1D9E75' }}>hello@vestio.com.au</a></p>
         </Section>
 
         <Section title="2. What information we collect">
@@ -60,13 +60,13 @@ export default function PrivacyPage() {
             <li style={{ marginBottom: 8 }}>To score and rank properties using our AI system (Claude by Anthropic).</li>
             <li style={{ marginBottom: 8 }}>To send you email notifications if you have opted in.</li>
             <li style={{ marginBottom: 8 }}>To respond to your support or contact enquiries.</li>
-            <li style={{ marginBottom: 8 }}>To improve PropSight&apos;s matching accuracy and features.</li>
+            <li style={{ marginBottom: 8 }}>To improve Vestio&apos;s matching accuracy and features.</li>
           </ul>
           <p style={{ marginTop: 12 }}>We do not sell your personal information to any third party. We do not use your information for advertising targeting.</p>
         </Section>
 
         <Section title="4. AI and third-party data processing">
-          <p>PropSight uses Claude (developed by Anthropic) to score and analyse property listings. Your search preferences are sent to Anthropic&apos;s API to generate property scores. No personally identifiable information (name, email, contact details) is sent to Anthropic — only your search criteria (suburbs, budget, property type).</p>
+          <p>Vestio uses Claude (developed by Anthropic) to score and analyse property listings. Your search preferences are sent to Anthropic&apos;s API to generate property scores. No personally identifiable information (name, email, contact details) is sent to Anthropic — only your search criteria (suburbs, budget, property type).</p>
           <p style={{ marginTop: 12 }}>Anthropic&apos;s privacy policy is available at <a href="https://anthropic.com/privacy" target="_blank" rel="noopener noreferrer" style={{ color: '#1D9E75' }}>anthropic.com/privacy</a>.</p>
         </Section>
 
@@ -76,7 +76,7 @@ export default function PrivacyPage() {
 
         <Section title="6. Data storage and security">
           <p>Your data is stored on secure servers. Passwords are hashed using bcrypt and are never stored in plain text. API keys and secrets are stored in environment variables and are never exposed to the client. We use JWT tokens for authentication with 7-day expiry.</p>
-          <p style={{ marginTop: 12 }}>While we take reasonable steps to protect your data, no system is completely secure. We recommend using a unique password for PropSight.</p>
+          <p style={{ marginTop: 12 }}>While we take reasonable steps to protect your data, no system is completely secure. We recommend using a unique password for Vestio.</p>
         </Section>
 
         <Section title="7. Data retention">
@@ -92,24 +92,24 @@ export default function PrivacyPage() {
             <li style={{ marginBottom: 8 }}>Opt out of marketing emails at any time (unsubscribe link in every email).</li>
             <li style={{ marginBottom: 8 }}>Lodge a complaint with the <a href="https://www.oaic.gov.au" target="_blank" rel="noopener noreferrer" style={{ color: '#1D9E75' }}>Office of the Australian Information Commissioner</a> or the <a href="https://www.privacy.org.nz" target="_blank" rel="noopener noreferrer" style={{ color: '#1D9E75' }}>New Zealand Privacy Commissioner</a>.</li>
           </ul>
-          <p style={{ marginTop: 12 }}>To exercise any of these rights, email <a href="mailto:hello@propsight.com.au" style={{ color: '#1D9E75' }}>hello@propsight.com.au</a>.</p>
+          <p style={{ marginTop: 12 }}>To exercise any of these rights, email <a href="mailto:hello@vestio.com.au" style={{ color: '#1D9E75' }}>hello@vestio.com.au</a>.</p>
         </Section>
 
         <Section title="9. Cookies" id="cookies">
-          <p>PropSight uses minimal cookies — only what is required for authentication (storing your login session). We do not use advertising cookies or third-party tracking cookies.</p>
+          <p>Vestio uses minimal cookies — only what is required for authentication (storing your login session). We do not use advertising cookies or third-party tracking cookies.</p>
         </Section>
 
         <Section title="10. Children">
-          <p>PropSight is not intended for users under 18. We do not knowingly collect data from minors.</p>
+          <p>Vestio is not intended for users under 18. We do not knowingly collect data from minors.</p>
         </Section>
 
         <Section title="11. Changes to this policy">
-          <p>We may update this policy as the product evolves. We will notify registered users of material changes via email. Continued use of PropSight after changes constitutes acceptance.</p>
+          <p>We may update this policy as the product evolves. We will notify registered users of material changes via email. Continued use of Vestio after changes constitutes acceptance.</p>
         </Section>
 
         <Section title="12. Contact">
-          <p>For any privacy questions: <a href="mailto:hello@propsight.com.au" style={{ color: '#1D9E75' }}>hello@propsight.com.au</a></p>
-          <p style={{ marginTop: 8 }}>Postal: PropSight, Brisbane, Queensland, Australia</p>
+          <p>For any privacy questions: <a href="mailto:hello@vestio.com.au" style={{ color: '#1D9E75' }}>hello@vestio.com.au</a></p>
+          <p style={{ marginTop: 8 }}>Postal: Vestio, Brisbane, Queensland, Australia</p>
         </Section>
       </div>
     </div>

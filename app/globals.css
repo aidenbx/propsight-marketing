@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* ─── PropSight Design Tokens ─────────────────────────────────────────────── */
+/* ─── Vestio Design Tokens ─────────────────────────────────────────────── */
 :root {
   --navy:           #1A3A5C;
   --teal:           #1D9E75;
@@ -97,4 +97,29 @@ body {
   transform-origin: left;
   animation: underline-grow 400ms 600ms ease forwards;
   transform: scaleX(0);
+}
+
+/* ─── Mobile responsive ─────────────────────────────────────────────────────── */
+
+/* SocialProof marquee — never horizontal-scroll the page */
+.marquee-track { will-change: transform; }
+
+/* Features — single column on small screens */
+@media (max-width: 640px) {
+  #features .feature-grid,
+  [id="features"] > div > div:last-child {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Pricing — no scale on mobile so cards don't overflow */
+@media (max-width: 768px) {
+  .pricing-featured {
+    transform: none !important;
+  }
+}
+
+/* Navbar — tight padding on mobile to prevent overflow */
+@media (max-width: 1023px) {
+  nav > div { padding: 0 16px !important; }
 }

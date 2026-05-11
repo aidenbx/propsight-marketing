@@ -2,7 +2,7 @@
 import AnimateOnScroll from './ui/AnimateOnScroll';
 import PricingToggle from './ui/PricingToggle';
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.propsight.com.au';
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.vestio.com.au';
 
 function CheckIcon({ color = '#1D9E75' }) {
   return (

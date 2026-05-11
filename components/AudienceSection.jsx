@@ -1,7 +1,7 @@
 'use client';
 import AnimateOnScroll from './ui/AnimateOnScroll';
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.propsight.com.au';
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.vestio.com.au';
 
 function CheckItem({ text, light }) {
   return (
@@ -48,7 +48,7 @@ export default function AudienceSection() {
             </h3>
 
             <p style={{ fontSize: 15, color: '#636366', lineHeight: 1.65, marginTop: 12 }}>
-              Properties sell in days. Open homes book out. By the time you find something worth inspecting, it&apos;s gone. PropSight monitors your target suburbs 24/7 and alerts you the moment something matching your budget appears — before the weekend rush.
+              Properties sell in days. Open homes book out. By the time you find something worth inspecting, it&apos;s gone. Vestio monitors your target suburbs 24/7 and alerts you the moment something matching your budget appears — before the weekend rush.
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 20, flex: 1 }}>
@@ -100,7 +100,7 @@ export default function AudienceSection() {
             </h3>
 
             <p style={{ fontSize: 15, color: '#636366', lineHeight: 1.65, marginTop: 12 }}>
-              Infrastructure announcements, rezoning approvals, and demographic shifts all signal suburb momentum — weeks before prices move. PropSight aggregates these signals daily so you can position ahead of the curve, not behind it.
+              Infrastructure announcements, rezoning approvals, and demographic shifts all signal suburb momentum — weeks before prices move. Vestio aggregates these signals daily so you can position ahead of the curve, not behind it.
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 20, flex: 1 }}>

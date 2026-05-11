@@ -9,11 +9,11 @@ const NAV_LINKS = [
   { label: 'Contact',      href: '#contact' },
 ];
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.propsight.com.au';
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.vestio.com.au';
 
 function Logo() {
   return (
-    <a href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
+    <a href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none', flexShrink: 0 }}>
       {/* SVG logomark */}
       <div style={{ position: 'relative', width: 40, height: 40 }}>
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -34,9 +34,9 @@ function Logo() {
           border: '1.5px solid #1D9E75',
         }} />
       </div>
-      <span style={{ fontSize: 20, fontWeight: 800, lineHeight: 1 }}>
-        <span style={{ color: '#1A3A5C' }}>Prop</span>
-        <span style={{ color: '#1D9E75' }}>Sight</span>
+      <span style={{ fontSize: 20, fontWeight: 800, lineHeight: 1, whiteSpace: 'nowrap' }}>
+        <span style={{ color: '#1A3A5C' }}>Vest</span>
+        <span style={{ color: '#1D9E75' }}>io</span>
       </span>
     </a>
   );
@@ -99,11 +99,12 @@ export default function Navbar() {
           {/* CTA buttons */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <a href={`${APP_URL}/login`} rel="noopener noreferrer"
+              className="hidden lg:flex"
               style={{
                 height: 36, padding: '0 16px', borderRadius: 10,
                 border: '1.5px solid #1A3A5C', color: '#1A3A5C',
                 fontSize: 14, fontWeight: 500, textDecoration: 'none',
-                display: 'flex', alignItems: 'center',
+                alignItems: 'center',
                 transition: 'all 200ms ease', background: 'transparent',
               }}
               onMouseEnter={e => { e.currentTarget.style.background = '#1A3A5C'; e.currentTarget.style.color = '#fff'; }}
@@ -112,12 +113,12 @@ export default function Navbar() {
               Sign in
             </a>
             <a href={`${APP_URL}/register`} rel="noopener noreferrer"
-              className="hidden sm:flex"
+              className="hidden lg:flex"
               style={{
                 height: 36, padding: '0 16px', borderRadius: 10,
                 background: '#1D9E75', color: '#fff', border: '1.5px solid #1D9E75',
                 fontSize: 14, fontWeight: 500, textDecoration: 'none',
-                display: 'flex', alignItems: 'center',
+                alignItems: 'center',
                 transition: 'all 200ms ease',
               }}
               onMouseEnter={e => { e.currentTarget.style.background = '#0F6E56'; e.currentTarget.style.transform = 'scale(1.01)'; }}
@@ -170,7 +171,7 @@ export default function Navbar() {
             style={{
               position: 'fixed', top: 64, left: 0, right: 0,
               background: '#fff', zIndex: 49,
-              padding: '24px 24px 40px',
+              padding: '28px 20px 40px',
               borderBottom: '1px solid #E4ECF7',
               boxShadow: '0 8px 24px rgba(26,58,92,0.10)',
             }}
@@ -190,22 +191,25 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 24 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginTop: 24 }}>
               <a href={`${APP_URL}/login`} rel="noopener noreferrer"
                 style={{
                   display: 'block', textAlign: 'center',
-                  padding: '14px', borderRadius: 12,
+                  height: 52, lineHeight: '52px',
+                  borderRadius: 14,
                   border: '1.5px solid #1A3A5C', color: '#1A3A5C',
-                  fontSize: 15, fontWeight: 600, textDecoration: 'none',
+                  fontSize: 16, fontWeight: 600, textDecoration: 'none',
                 }}>
                 Sign in
               </a>
               <a href={`${APP_URL}/register`} rel="noopener noreferrer"
                 style={{
                   display: 'block', textAlign: 'center',
-                  padding: '14px', borderRadius: 12,
+                  height: 52, lineHeight: '52px',
+                  borderRadius: 14,
                   background: '#1D9E75', color: '#fff',
-                  fontSize: 15, fontWeight: 600, textDecoration: 'none',
+                  fontSize: 16, fontWeight: 700, textDecoration: 'none',
+                  boxShadow: '0 4px 12px rgba(29,158,117,0.3)',
                 }}>
                 Get started free
               </a>

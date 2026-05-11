@@ -8,24 +8,24 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'PropSight — AI Property Scout for Australia & New Zealand',
-  description: 'PropSight helps first home buyers and investors across Australia and New Zealand find better properties faster. AI-scored daily digest, capital growth signals, and inspection scheduling.',
-  keywords: 'property search australia, AI property, first home buyer australia, property investor nz, oceania property search, auckland property, sydney property, investment property app, daily property digest',
+  title: 'Vestio — AI Property Scout for Australia',
+  description: 'Vestio helps first home buyers and investors across Australia find better properties faster. AI-scored daily digest, capital growth signals, and inspection scheduling.',
+  keywords: 'property search australia, AI property, first home buyer australia, property investor, sydney property, brisbane property, investment property app, daily property digest',
   openGraph: {
-    title: 'PropSight — Find your next property smarter',
-    description: 'AI-powered daily property digest for AU & NZ buyers.',
-    url: 'https://propsight.com.au',
-    siteName: 'PropSight',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'PropSight — AI Property Scout' }],
+    title: 'Vestio — Find your next property smarter',
+    description: 'AI-powered daily property digest for Australian buyers and investors.',
+    url: 'https://vestio.com.au',
+    siteName: 'Vestio',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Vestio — AI Property Scout' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PropSight — AI Property Scout',
-    description: 'AI-powered daily property digest for AU & NZ buyers.',
+    title: 'Vestio — AI Property Scout',
+    description: 'AI-powered daily property digest for Australian buyers and investors.',
     images: ['/og-image.png'],
   },
-  metadataBase: new URL('https://propsight.com.au'),
+  metadataBase: new URL('https://vestio.com.au'),
   robots: { index: true, follow: true },
 };
 

@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Terms of Service — PropSight',
-  description: 'PropSight terms of service. Rules for using PropSight.',
+  title: 'Terms of Service — Vestio',
+  description: 'Vestio terms of service. Rules for using Vestio.',
 };
 
 const HEADING_STYLE = {
@@ -49,7 +49,7 @@ export default function TermsPage() {
           color: '#1D9E75', fontSize: 14, textDecoration: 'none',
           fontWeight: 500,
         }}>
-          ← Back to PropSight
+          ← Back to Vestio
         </a>
 
         {/* Page heading */}
@@ -59,19 +59,19 @@ export default function TermsPage() {
         <p style={{ fontSize: 14, color: '#9CA3AF', marginTop: 8 }}>Last updated: April 2026</p>
 
         <Section title="1. Acceptance of terms">
-          <p>By creating a PropSight account or using our service, you agree to these terms. If you do not agree, please do not use PropSight.</p>
+          <p>By creating a Vestio account or using our service, you agree to these terms. If you do not agree, please do not use Vestio.</p>
         </Section>
 
-        <Section title="2. What PropSight is — and is not">
-          <p>PropSight is a property search and information tool. It provides AI-scored property listings, suburb data, and market signals to help you find properties matching your criteria.</p>
+        <Section title="2. What Vestio is — and is not">
+          <p>Vestio is a property search and information tool. It provides AI-scored property listings, suburb data, and market signals to help you find properties matching your criteria.</p>
           <Callout>
-            <strong>Not financial advice.</strong> Property scores and suburb signals are informational tools only. PropSight is not licensed to provide financial product advice. Please consult a qualified professional before making property investment decisions.
+            <strong>Not financial advice.</strong> Property scores and suburb signals are informational tools only. Vestio is not licensed to provide financial product advice. Please consult a qualified professional before making property investment decisions.
           </Callout>
-          <p>IMPORTANT: PropSight is not a financial adviser and does not provide financial advice. Property scores, suburb signals, and digest content are for informational purposes only. They do not constitute a recommendation to buy, sell, or hold any property or financial product. Always seek independent financial and legal advice before making any property purchase decision.</p>
+          <p>IMPORTANT: Vestio is not a financial adviser and does not provide financial advice. Property scores, suburb signals, and digest content are for informational purposes only. They do not constitute a recommendation to buy, sell, or hold any property or financial product. Always seek independent financial and legal advice before making any property purchase decision.</p>
         </Section>
 
         <Section title="3. Eligibility">
-          <p>You must be 18 years or older to use PropSight. By registering you confirm you meet this requirement.</p>
+          <p>You must be 18 years or older to use Vestio. By registering you confirm you meet this requirement.</p>
         </Section>
 
         <Section title="4. Your account">
@@ -79,15 +79,15 @@ export default function TermsPage() {
             <li style={{ marginBottom: 8 }}>You are responsible for maintaining the security of your account credentials.</li>
             <li style={{ marginBottom: 8 }}>You must not share your account with others.</li>
             <li style={{ marginBottom: 8 }}>You must provide accurate information when registering.</li>
-            <li style={{ marginBottom: 8 }}>PropSight reserves the right to suspend accounts that violate these terms.</li>
+            <li style={{ marginBottom: 8 }}>Vestio reserves the right to suspend accounts that violate these terms.</li>
           </ul>
         </Section>
 
         <Section title="5. Acceptable use">
           <ul style={{ paddingLeft: 20, margin: 0 }}>
-            <li style={{ marginBottom: 8 }}>You may not use PropSight to scrape, copy, or republish property data.</li>
+            <li style={{ marginBottom: 8 }}>You may not use Vestio to scrape, copy, or republish property data.</li>
             <li style={{ marginBottom: 8 }}>You may not attempt to reverse engineer, hack, or disrupt the service.</li>
-            <li style={{ marginBottom: 8 }}>You may not use PropSight for any unlawful purpose.</li>
+            <li style={{ marginBottom: 8 }}>You may not use Vestio for any unlawful purpose.</li>
             <li style={{ marginBottom: 8 }}>You may not create multiple accounts to circumvent plan limits.</li>
           </ul>
         </Section>
@@ -95,23 +95,23 @@ export default function TermsPage() {
         <Section title="6. Subscription and billing">
           <p><strong style={{ color: '#1A3A5C' }}>Free tier:</strong> Available indefinitely with feature limitations.</p>
           <p style={{ marginTop: 12 }}><strong style={{ color: '#1A3A5C' }}>Paid plans:</strong> Billed monthly or annually via Stripe. You can cancel at any time — cancellation takes effect at the end of the current billing period. No refunds are provided for partial periods.</p>
-          <p style={{ marginTop: 12 }}>PropSight reserves the right to change pricing with 30 days notice to existing subscribers.</p>
+          <p style={{ marginTop: 12 }}>Vestio reserves the right to change pricing with 30 days notice to existing subscribers.</p>
         </Section>
 
         <Section title="7. Property data accuracy">
-          <p>Property listing data is sourced from third-party platforms and may not always be current or accurate. PropSight does not guarantee the accuracy, completeness, or availability of any listing data. Always verify property details directly with the listing agent before acting.</p>
+          <p>Property listing data is sourced from third-party platforms and may not always be current or accurate. Vestio does not guarantee the accuracy, completeness, or availability of any listing data. Always verify property details directly with the listing agent before acting.</p>
         </Section>
 
         <Section title="8. AI scoring disclaimer">
-          <p>AI property scores are generated automatically and reflect a match against your stated criteria. They are not valuations, investment recommendations, or predictions of future performance. PropSight makes no warranty regarding the accuracy of AI scores.</p>
+          <p>AI property scores are generated automatically and reflect a match against your stated criteria. They are not valuations, investment recommendations, or predictions of future performance. Vestio makes no warranty regarding the accuracy of AI scores.</p>
         </Section>
 
         <Section title="9. Intellectual property">
-          <p>PropSight&apos;s software, design, and branding are owned by PropSight. Property listing data remains the property of the respective listing platforms and agents. You may not reproduce PropSight&apos;s interface or content without permission.</p>
+          <p>Vestio&apos;s software, design, and branding are owned by Vestio. Property listing data remains the property of the respective listing platforms and agents. You may not reproduce Vestio&apos;s interface or content without permission.</p>
         </Section>
 
         <Section title="10. Limitation of liability">
-          <p>To the maximum extent permitted by Australian law, PropSight is not liable for any loss or damage arising from your use of the service, reliance on property data or AI scores, or any property purchase decision made using PropSight information.</p>
+          <p>To the maximum extent permitted by Australian law, Vestio is not liable for any loss or damage arising from your use of the service, reliance on property data or AI scores, or any property purchase decision made using Vestio information.</p>
         </Section>
 
         <Section title="11. Governing law">
@@ -119,7 +119,7 @@ export default function TermsPage() {
         </Section>
 
         <Section title="12. Contact">
-          <p>Questions about these terms: <a href="mailto:hello@propsight.com.au" style={{ color: '#1D9E75' }}>hello@propsight.com.au</a></p>
+          <p>Questions about these terms: <a href="mailto:hello@vestio.com.au" style={{ color: '#1D9E75' }}>hello@vestio.com.au</a></p>
         </Section>
       </div>
     </div>

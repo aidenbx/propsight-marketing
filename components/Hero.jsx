@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import PhoneMockup from './ui/PhoneMockup';
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.propsight.com.au';
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.vestio.com.au';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -82,6 +82,14 @@ export default function Hero() {
       paddingTop: 64, display: 'flex', alignItems: 'center',
       position: 'relative', overflow: 'hidden',
     }}>
+      <style>{`
+        .hero-inner { flex-direction: column; gap: 32px; padding-top: 80px !important; }
+        .hero-phone-col { display: flex; justify-content: center; width: 100%; }
+        @media (min-width: 1024px) {
+          .hero-inner { flex-direction: row; align-items: center; gap: 48px; padding-top: 48px !important; }
+          .hero-phone-col { display: flex; width: auto; flex: 1 1 45%; }
+        }
+      `}</style>
       {/* Radial bg blob */}
       <div style={{
         position: 'absolute', top: -200, right: -200,
@@ -90,10 +98,10 @@ export default function Hero() {
         pointerEvents: 'none', zIndex: 0,
       }} />
 
-      <div style={{
+      <div className="hero-inner" style={{
         maxWidth: 1200, margin: '0 auto', padding: '48px 24px',
-        display: 'flex', alignItems: 'center',
-        gap: 48, width: '100%', position: 'relative', zIndex: 1,
+        display: 'flex',
+        width: '100%', position: 'relative', zIndex: 1,
       }}>
         {/* LEFT — copy */}
         <div style={{ flex: '1 1 55%', minWidth: 0 }}>
@@ -130,7 +138,7 @@ export default function Hero() {
               color: '#636366', maxWidth: 520, lineHeight: 1.65, marginTop: 24,
             }}
           >
-            Most buyers lose their weekends buried across multiple property sites — inspecting homes that never quite fit. PropSight does the searching, scoring and scheduling so your time goes into the right properties, not all of them.
+            Most buyers lose their weekends buried across multiple property sites — inspecting homes that never quite fit. Vestio does the searching, scoring and scheduling so your time goes into the right properties, not all of them.
           </motion.p>
 
           {/* Audience toggle */}
@@ -240,15 +248,12 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* RIGHT — phone mockup (hidden on mobile) */}
-        <div className="hidden md:flex" style={{
-          flex: '1 1 45%', justifyContent: 'center',
-          alignItems: 'center', position: 'relative',
-        }}>
+        {/* RIGHT — phone mockup */}
+        <div className="hero-phone-col" style={{ alignItems: 'center', position: 'relative' }}>
           <div className="animate-float" style={{ position: 'relative' }}>
             <PhoneMockup width={280}>
               <div style={{ background: '#1A3A5C', padding: '8px 12px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ color: '#fff', fontSize: 14, fontWeight: 800 }}>PropSight</span>
+                <span style={{ color: '#fff', fontSize: 14, fontWeight: 800 }}>Vestio</span>
                 <div style={{ position: 'relative' }}>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2">
                     <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9" /><path d="M13.73 21a2 2 0 01-3.46 0" />
@@ -274,7 +279,7 @@ export default function Hero() {
               </div>
             </PhoneMockup>
 
-            <FloatingCard style={{ top: -10, right: -24, minWidth: 130 }}>
+            <div className="hidden lg:block"><FloatingCard style={{ top: -10, right: -24, minWidth: 130 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                 <div style={{ width: 32, height: 32, background: '#1D9E75', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" /></svg>
@@ -284,9 +289,9 @@ export default function Hero() {
                   <div style={{ fontSize: 14, fontWeight: 800, color: '#1A3A5C' }}>91 / 100</div>
                 </div>
               </div>
-            </FloatingCard>
+            </FloatingCard></div>
 
-            <FloatingCard style={{ bottom: 40, left: -24, minWidth: 140 }}>
+            <div className="hidden lg:block"><FloatingCard style={{ bottom: 40, left: -24, minWidth: 140 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                 <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#1D9E75" /><path d="M6 10l3 3 5-5" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 <div>
@@ -294,9 +299,9 @@ export default function Hero() {
                   <div style={{ fontSize: 10, color: '#9CA3AF' }}>3 suburbs · $785k</div>
                 </div>
               </div>
-            </FloatingCard>
+            </FloatingCard></div>
 
-            <FloatingCard style={{ top: 80, left: -20 }}>
+            <div className="hidden lg:block"><FloatingCard style={{ top: 80, left: -20 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" strokeWidth="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9" /></svg>
                 <div>
@@ -304,7 +309,7 @@ export default function Hero() {
                   <div style={{ fontSize: 10, color: '#9CA3AF' }}>Just now</div>
                 </div>
               </div>
-            </FloatingCard>
+            </FloatingCard></div>
           </div>
         </div>
       </div>

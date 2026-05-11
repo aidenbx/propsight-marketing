@@ -163,7 +163,7 @@ export default function PhoneMockup({ children, width = 280, className = '' }) {
       <div style={{ padding: '10px 14px 8px', background: '#fff', borderBottom: '0.5px solid #E4ECF7' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
-            <div style={{ fontSize: 15, fontWeight: 800, color: '#1A3A5C', letterSpacing: '-0.3px' }}>PropSight</div>
+            <div style={{ fontSize: 15, fontWeight: 800, color: '#1A3A5C', letterSpacing: '-0.3px' }}>Vestio</div>
             <div style={{ fontSize: 9, color: '#1D9E75', fontWeight: 600 }}>
               {activeTab === 'digest' ? '✓ 847 listings scanned today' : activeTab === 'signals' ? '📡 2 new signals in your area' : '📈 6 suburbs tracked'}
             </div>

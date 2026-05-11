@@ -3,7 +3,7 @@ import AnimateOnScroll from './ui/AnimateOnScroll';
 
 const TESTIMONIALS = [
   {
-    quote: "I used to spend hours every weekend going through listings that were never quite right. PropSight sends me the ones that actually match what I want — I only look at properties worth my time now.",
+    quote: "I used to spend hours every weekend going through listings that were never quite right. Vestio sends me the ones that actually match what I want — I only look at properties worth my time now.",
     name: 'Cayley B.',
     role: 'First home buyer',
     location: 'Brisbane',

@@ -21,7 +21,7 @@ const STEPS = [
   {
     num: 1, bg: '#1D9E75',
     title: 'Tell us what matters',
-    body: 'Set your suburbs, budget, and buyer goals in under 2 minutes. Family buyer, investor, lifestyle seeker — PropSight personalises everything from there.',
+    body: 'Set your suburbs, budget, and buyer goals in under 2 minutes. Family buyer, investor, lifestyle seeker — Vestio personalises everything from there.',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/>
@@ -51,7 +51,7 @@ const STEPS = [
   {
     num: 4, bg: '#1A3A5C',
     title: 'Inspect smarter, decide faster',
-    body: 'Tap Inspect. PropSight builds your Saturday route. Directions, times, addresses — all set. No spreadsheet, no stress.',
+    body: 'Tap Inspect. Vestio builds your Saturday route. Directions, times, addresses — all set. No spreadsheet, no stress.',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
@@ -95,7 +95,7 @@ export default function HowItWorks() {
             {/* Without */}
             <div style={{ padding: '28px 28px 32px', background: '#FFF8F7', borderRight: '1px solid #E4ECF7' }}>
               <div style={{ fontSize: 11, fontWeight: 700, color: '#E24B4A', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 20 }}>
-                ✗ Without PropSight
+                ✗ Without Vestio
               </div>
               {BEFORE.map((item, i) => (
                 <div key={i} style={{
@@ -112,7 +112,7 @@ export default function HowItWorks() {
             {/* With */}
             <div style={{ padding: '28px 28px 32px', background: '#F6FEFB' }}>
               <div style={{ fontSize: 11, fontWeight: 700, color: '#1D9E75', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 20 }}>
-                ✓ With PropSight
+                ✓ With Vestio
               </div>
               {AFTER.map((item, i) => (
                 <div key={i} style={{
@@ -129,16 +129,23 @@ export default function HowItWorks() {
         </AnimateOnScroll>
 
         {/* Steps — horizontal timeline */}
+        <style>{`
+          .steps-grid { grid-template-columns: 1fr 1fr; gap: 40px 24px; }
+          .connector-line { display: none; }
+          @media (min-width: 1024px) {
+            .steps-grid { grid-template-columns: repeat(4, 1fr); gap: 24px; }
+            .connector-line { display: block; }
+          }
+        `}</style>
         <div style={{ position: 'relative' }}>
           {/* Connecting line — desktop only */}
-          <div style={{
+          <div className="connector-line" style={{
             position: 'absolute', top: 28, left: '12.5%', right: '12.5%',
             height: 2, background: '#E4ECF7', zIndex: 0,
           }} />
 
-          <div style={{
+          <div className="steps-grid" style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(4, 1fr)',
             gap: 24,
           }}>
             {STEPS.map((step, i) => (

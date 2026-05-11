@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import AnimateOnScroll from './ui/AnimateOnScroll';
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.propsight.com.au';
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.vestio.com.au';
 
 const INPUT_STYLE = {
   width: '100%', height: 48,
@@ -168,19 +168,19 @@ export default function Contact() {
           <AnimateOnScroll delay={0.2} style={{ flex: '1 1 240px', display: 'flex', flexDirection: 'column', gap: 20 }}>
             <InfoCard
               icon={<EmailIcon />}
-              title="hello@propsight.com.au"
+              title="hello@vestio.com.au"
               sub="We reply within 24 hours"
             />
             <InfoCard
               icon={<MapPinIcon />}
               title="Brisbane, Queensland"
-              sub="Serving AU + NZ markets"
+              sub="Serving Australian buyers"
             />
             {/* Social */}
             <div style={{ background: '#fff', border: '1px solid #E4ECF7', borderRadius: 12, padding: 20 }}>
               <div style={{ fontSize: 14, fontWeight: 700, color: '#1A3A5C', marginBottom: 12 }}>Follow us</div>
               <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-                <SocialIcon href="https://instagram.com/propsightau">
+                <SocialIcon href="https://instagram.com/vestioau">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A3A5C" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="2" y="2" width="20" height="20" rx="5" /><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
                   </svg>
@@ -196,7 +196,7 @@ export default function Contact() {
                   </svg>
                 </SocialIcon>
               </div>
-              <div style={{ fontSize: 11, fontWeight: 600, color: '#1D9E75', marginTop: 10 }}>Follow @propsightau</div>
+              <div style={{ fontSize: 11, fontWeight: 600, color: '#1D9E75', marginTop: 10 }}>Follow @vestioau</div>
             </div>
           </AnimateOnScroll>
         </div>

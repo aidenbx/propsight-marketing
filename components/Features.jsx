@@ -13,7 +13,7 @@ const FEATURES = {
     {
       tone: 'teal',
       title: 'Know what you can actually afford',
-      body: 'Set your borrowing estimate once. PropSight flags every listing as Within reach, Possible with LMI, or Out of range — before you even open it. No more falling for properties you can\'t buy.',
+      body: 'Set your borrowing estimate once. Vestio flags every listing as Within reach, Possible with LMI, or Out of range — before you even open it. No more falling for properties you can\'t buy.',
       outcome: '💡 Saves hours of false hope',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -35,7 +35,7 @@ const FEATURES = {
     {
       tone: 'teal',
       title: 'Saturday sorted automatically',
-      body: 'Tap Inspect on anything you like. PropSight builds your Saturday inspection route — addresses, times, directions — without a spreadsheet in sight.',
+      body: 'Tap Inspect on anything you like. Vestio builds your Saturday inspection route — addresses, times, directions — without a spreadsheet in sight.',
       outcome: '📍 Your route, not your stress',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -48,7 +48,7 @@ const FEATURES = {
     {
       tone: 'teal',
       title: 'Find out before the suburb does',
-      body: 'PropSight scans hundreds of news sources daily. When a train station gets approved, a rezoning passes, or a major employer commits to a suburb — you get an alert. Infrastructure signals the market hasn\'t priced in yet.',
+      body: 'Vestio scans hundreds of news sources daily. When a train station gets approved, a rezoning passes, or a major employer commits to a suburb — you get an alert. Infrastructure signals the market hasn\'t priced in yet.',
       outcome: '🚆 Real signals, real timing',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -83,7 +83,7 @@ const FEATURES = {
     {
       tone: 'teal',
       title: 'School zones that actually matter',
-      body: 'Tell PropSight good schools matter. Every property card shows school catchment quality for that suburb. Filter your digest to only show properties in zones that meet your standard.',
+      body: 'Tell Vestio good schools matter. Every property card shows school catchment quality for that suburb. Filter your digest to only show properties in zones that meet your standard.',
       outcome: '🎓 Schools front and centre',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -105,7 +105,7 @@ const FEATURES = {
     {
       tone: 'teal',
       title: 'Never inspect the wrong house again',
-      body: 'How many times have you driven to an inspection only to know in 30 seconds it was wrong? PropSight\'s AI score tells you why a property fits or doesn\'t before you put it in the calendar.',
+      body: 'How many times have you driven to an inspection only to know in 30 seconds it was wrong? Vestio\'s AI score tells you why a property fits or doesn\'t before you put it in the calendar.',
       outcome: '✓ Qualify before you commit',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -166,7 +166,7 @@ export default function Features() {
               Stop browsing. Start deciding.
             </h2>
             <p style={{ fontSize: 17, color: '#636366', maxWidth: 640, margin: '0 auto', lineHeight: 1.7 }}>
-              Most buyers spend their weekends buried across multiple listing sites, booking inspections for properties that turn out to be the wrong size, wrong street, or wrong price. PropSight reads the market every morning so you don&apos;t have to.
+              Most buyers spend their weekends buried across multiple listing sites, booking inspections for properties that turn out to be the wrong size, wrong street, or wrong price. Vestio reads the market every morning so you don&apos;t have to.
             </p>
           </div>
         </AnimateOnScroll>
