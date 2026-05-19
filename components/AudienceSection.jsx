@@ -52,7 +52,7 @@ export default function AudienceSection() {
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 20, flex: 1 }}>
-              <CheckItem text="Daily digest of new listings matching your budget" light />
+              <CheckItem text="Unlimited suburb radius — set your search area on the map, Vestio scans every suburb within it" light />
               <CheckItem text="AI scoring so you focus only on the best matches" light />
               <CheckItem text="Instant alerts — never miss a new listing again" light />
               <CheckItem text="Inspection scheduler so you see more in less time" light />
@@ -107,7 +107,7 @@ export default function AudienceSection() {
               <CheckItem text="📡 Infrastructure signals — get alerted when new train lines, rezoning approvals or major employers are announced in your target suburbs before prices move" />
               <CheckItem text="📈 Suburb momentum scores — track which suburbs are Rising, Peak, Declining or in Recovery" />
               <CheckItem text="💰 Rental yield estimates on every listing" />
-              <CheckItem text="🔍 Suburb comparison tool — compare up to 3 suburbs side by side across price, yield, schools and transport" />
+              <CheckItem text="🔍 Side-by-side suburb comparison — price trends, rental yield, school ratings and AI match scores across up to 3 suburbs simultaneously" />
             </div>
 
             <a href={`${APP_URL}/register`} rel="noopener noreferrer"

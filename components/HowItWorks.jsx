@@ -136,12 +136,16 @@ export default function HowItWorks() {
             .steps-grid { grid-template-columns: repeat(4, 1fr); gap: 24px; }
             .connector-line { display: block; }
           }
+          @keyframes stepPulse {
+            0%, 100% { box-shadow: 0 4px 16px rgba(0,0,0,0.15), 0 0 0 0 rgba(29,158,117,0.3); }
+            50% { box-shadow: 0 4px 16px rgba(0,0,0,0.15), 0 0 0 8px rgba(29,158,117,0); }
+          }
         `}</style>
         <div style={{ position: 'relative' }}>
           {/* Connecting line — desktop only */}
           <div className="connector-line" style={{
             position: 'absolute', top: 28, left: '12.5%', right: '12.5%',
-            height: 2, background: '#E4ECF7', zIndex: 0,
+            height: 2, background: 'linear-gradient(to right, #1D9E75, #E4ECF7, #1D9E75)', zIndex: 0,
           }} />
 
           <div className="steps-grid" style={{
@@ -162,6 +166,7 @@ export default function HowItWorks() {
                       transition: 'transform 200ms ease',
                       boxShadow: '0 4px 16px rgba(0,0,0,0.15)',
                       cursor: 'default',
+                      ...(i === 0 ? { animation: 'stepPulse 2.5s ease infinite' } : {}),
                     }}
                     onMouseEnter={e => { e.currentTarget.style.transform = 'scale(1.08)'; }}
                     onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1)'; }}

@@ -3,7 +3,7 @@
 const SIGNALS = [
   { icon: '🚆', text: 'Cross River Rail — $5.4B Brisbane rail project transforming suburb connectivity' },
   { icon: '🏗', text: 'Western Sydney rezoning — Austral and Leppington reshaped by large-scale master-planning' },
-  { icon: '📈', text: 'Brisbane forecast — CoreLogic projects 6–7% growth in inner and middle-ring suburbs for 2026' },
+  { icon: '📈', text: 'Brisbane inner and middle-ring suburbs forecast for 6–7% growth in 2026 — Australian Financial Review' },
   { icon: '🏛', text: 'Queensland infrastructure — $103.9B pipeline over five years, largest in state history' },
   { icon: '🚆', text: 'Beenleigh Rail Upgrade — Double-tracking Kuraby to Beenleigh, $5.75B committed' },
   { icon: '🏅', text: 'Brisbane 2032 Olympics — Infrastructure spend accelerating across inner-city precincts' },
@@ -73,7 +73,7 @@ export default function SignalTicker() {
           background: '#1A3A5C',
           zIndex: 2,
         }}>
-          Source: CoreLogic, QLD Gov, Brisbane Times
+          Source: Queensland Government, Brisbane Times, ABC News, Australian Financial Review
         </div>
       </div>
     </div>

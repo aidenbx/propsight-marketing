@@ -13,7 +13,8 @@ const FEATURES = {
     {
       tone: 'teal',
       title: 'Know what you can actually afford',
-      body: 'Set your borrowing estimate once. Vestio flags every listing as Within reach, Possible with LMI, or Out of range — before you even open it. No more falling for properties you can\'t buy.',
+      body: 'Set your borrowing estimate once. Vestio flags every listing as Within reach, Possible with LMI, or Out of range — before you even open it.',
+      metric: 'Know before you look',
       outcome: '💡 Saves hours of false hope',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -24,7 +25,8 @@ const FEATURES = {
     {
       tone: 'navy',
       title: 'Your shortlist, every morning',
-      body: 'Instead of scrolling hundreds of listings across multiple sites, you wake up to 20 pre-scored matches that fit your suburb, budget, and bedroom count. Ranked best first.',
+      body: 'Wake up to 20 pre-scored matches that fit your suburb, budget, and bedroom count — ranked best first. No more scrolling across multiple sites.',
+      metric: '3 mins vs 3 hours',
       outcome: '⏱ 3 minutes vs 3 hours',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A3A5C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -36,6 +38,7 @@ const FEATURES = {
       tone: 'teal',
       title: 'Saturday sorted automatically',
       body: 'Tap Inspect on anything you like. Vestio builds your Saturday inspection route — addresses, times, directions — without a spreadsheet in sight.',
+      metric: 'Saturday sorted',
       outcome: '📍 Your route, not your stress',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -48,7 +51,8 @@ const FEATURES = {
     {
       tone: 'teal',
       title: 'Find out before the suburb does',
-      body: 'Vestio scans hundreds of news sources daily. When a train station gets approved, a rezoning passes, or a major employer commits to a suburb — you get an alert. Infrastructure signals the market hasn\'t priced in yet.',
+      body: 'Vestio scans hundreds of news sources daily. When a train station gets approved, a rezoning passes, or a major employer commits — you get an alert before prices move.',
+      metric: 'Before prices move',
       outcome: '🚆 Real signals, real timing',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -59,7 +63,8 @@ const FEATURES = {
     {
       tone: 'navy',
       title: 'Suburb momentum at a glance',
-      body: 'Every suburb in your search area classified as Rising, Peak, Declining, or Recovery — updated daily from price trend and listing volume data. Know the cycle before you commit.',
+      body: 'Every suburb classified as Rising, Peak, Declining, or Recovery — updated daily from price trend and listing volume data. Know the cycle before you commit.',
+      metric: '12 metrics per suburb',
       outcome: '📈 Know the cycle',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A3A5C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -70,7 +75,8 @@ const FEATURES = {
     {
       tone: 'teal',
       title: 'Compare suburbs side by side',
-      body: 'Avg price, rental yield, vacancy rate, school ratings, transport access and AI match score across up to 3 suburbs simultaneously. The analysis your broker charges $300 for.',
+      body: 'Avg price, rental yield, school ratings and AI match score across up to 3 suburbs simultaneously. The analysis your broker charges $300 for.',
+      metric: '12 metrics per suburb',
       outcome: '🔍 Free suburb analysis',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -83,7 +89,8 @@ const FEATURES = {
     {
       tone: 'teal',
       title: 'School zones that actually matter',
-      body: 'Tell Vestio good schools matter. Every property card shows school catchment quality for that suburb. Filter your digest to only show properties in zones that meet your standard.',
+      body: 'Tell Vestio good schools matter. Every property card shows school catchment quality for that suburb — filter your digest to only show zones that meet your standard.',
+      metric: '12 metrics per suburb',
       outcome: '🎓 Schools front and centre',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -94,7 +101,8 @@ const FEATURES = {
     {
       tone: 'navy',
       title: 'Safety and lifestyle, scored',
-      body: 'Low crime, parks nearby, walkability to shops and cafes — set these as high priority goals and every AI score reflects what actually matters to your family, not just price per square metre.',
+      body: 'Low crime, parks nearby, walkability — set these as high priority goals and every AI score reflects what actually matters to your family, not just price per square metre.',
+      metric: '91/100 — scored in seconds',
       outcome: '🏡 Scored for your life',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A3A5C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -105,7 +113,8 @@ const FEATURES = {
     {
       tone: 'teal',
       title: 'Never inspect the wrong house again',
-      body: 'How many times have you driven to an inspection only to know in 30 seconds it was wrong? Vestio\'s AI score tells you why a property fits or doesn\'t before you put it in the calendar.',
+      body: "Vestio's AI score tells you why a property fits or doesn't before you put it in the calendar — saving you wasted drives and disappointment.",
+      metric: 'Saturday sorted',
       outcome: '✓ Qualify before you commit',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -116,7 +125,7 @@ const FEATURES = {
   ],
 };
 
-function FeatureCard({ feature, delay }) {
+function FeatureCard({ feature, delay, cardIndex }) {
   return (
     <AnimateOnScroll delay={delay}>
       <div
@@ -125,26 +134,46 @@ function FeatureCard({ feature, delay }) {
           borderRadius: 16, padding: '28px 24px',
           display: 'flex', flexDirection: 'column',
           height: '100%', transition: 'all 250ms ease', cursor: 'default',
+          position: 'relative', overflow: 'hidden',
         }}
         onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 12px 32px rgba(26,58,92,0.12)'; e.currentTarget.style.transform = 'translateY(-4px)'; }}
         onMouseLeave={e => { e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}
       >
+        {/* Background number */}
+        <div style={{
+          position: 'absolute', top: -8, right: 12,
+          fontSize: 72, fontWeight: 800, color: '#F5F9FF',
+          userSelect: 'none', zIndex: 0, lineHeight: 1, pointerEvents: 'none',
+        }}>
+          {cardIndex + 1}
+        </div>
+
+        {/* Icon */}
         <div style={{
           width: 52, height: 52, borderRadius: 14, marginBottom: 20, flexShrink: 0,
           background: feature.tone === 'teal' ? '#E6FFF7' : '#E8EEF5',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
+          position: 'relative', zIndex: 1,
         }}>
           {feature.icon}
         </div>
-        <h3 style={{ fontSize: 17, fontWeight: 700, color: '#1A3A5C', marginBottom: 12, margin: '0 0 12px' }}>{feature.title}</h3>
-        <p style={{ fontSize: 14, color: '#636366', lineHeight: 1.7, margin: '0 0 20px', flex: 1 }}>{feature.body}</p>
-        <div style={{
-          display: 'inline-flex', alignItems: 'center',
-          background: '#E1F5EE', color: '#1D9E75',
-          fontSize: 11, fontWeight: 600, padding: '5px 10px', borderRadius: 20,
-          alignSelf: 'flex-start',
-        }}>
-          {feature.outcome}
+
+        {/* Content at zIndex 1 */}
+        <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', flex: 1 }}>
+          {/* Outcome metric */}
+          <div style={{ fontSize: 13, fontWeight: 700, color: '#1D9E75', marginBottom: 8 }}>
+            {feature.metric}
+          </div>
+          <h3 style={{ fontSize: 17, fontWeight: 700, color: '#1A3A5C', marginBottom: 12, margin: '0 0 12px' }}>{feature.title}</h3>
+          <p style={{ fontSize: 14, color: '#636366', lineHeight: 1.7, margin: '0 0 20px', flex: 1 }}>{feature.body}</p>
+          <div style={{
+            display: 'inline-flex', alignItems: 'center',
+            background: '#E1F5EE', color: '#1D9E75',
+            fontSize: 11, fontWeight: 600, padding: '5px 10px', borderRadius: 20,
+            alignSelf: 'flex-start',
+          }}>
+            {feature.outcome}
+          </div>
         </div>
       </div>
     </AnimateOnScroll>
@@ -196,7 +225,7 @@ export default function Features() {
         {/* Feature cards */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 20 }}>
           {FEATURES[activeTab].map((f, i) => (
-            <FeatureCard key={`${activeTab}-${i}`} feature={f} delay={i * 0.1} />
+            <FeatureCard key={`${activeTab}-${i}`} feature={f} delay={i * 0.1} cardIndex={i} />
           ))}
         </div>
       </div>

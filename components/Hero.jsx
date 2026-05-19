@@ -138,7 +138,7 @@ export default function Hero() {
               color: '#636366', maxWidth: 520, lineHeight: 1.65, marginTop: 24,
             }}
           >
-            Most buyers lose their weekends buried across multiple property sites — inspecting homes that never quite fit. Vestio does the searching, scoring and scheduling so your time goes into the right properties, not all of them.
+            Your AI property scout. Every morning, ranked and ready.
           </motion.p>
 
           {/* Audience toggle */}
@@ -187,11 +187,12 @@ export default function Hero() {
                 display: 'inline-flex', alignItems: 'center',
                 height: 52, padding: '0 32px', borderRadius: 14,
                 background: '#1D9E75', color: '#fff',
-                fontSize: 16, fontWeight: 600, textDecoration: 'none',
+                fontSize: 16, fontWeight: 700, textDecoration: 'none',
+                boxShadow: '0 8px 24px rgba(29,158,117,0.35)',
                 transition: 'all 200ms ease',
               }}
-              onMouseEnter={e => { e.currentTarget.style.background = '#0F6E56'; e.currentTarget.style.transform = 'scale(1.01)'; e.currentTarget.style.boxShadow = '0 8px 24px rgba(26,58,92,0.10)'; }}
-              onMouseLeave={e => { e.currentTarget.style.background = '#1D9E75'; e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.boxShadow = 'none'; }}
+              onMouseEnter={e => { e.currentTarget.style.background = '#0F6E56'; e.currentTarget.style.transform = 'scale(1.01)'; }}
+              onMouseLeave={e => { e.currentTarget.style.background = '#1D9E75'; e.currentTarget.style.transform = 'scale(1)'; }}
             >
               Get started free →
             </a>
@@ -199,8 +200,8 @@ export default function Hero() {
               style={{
                 display: 'inline-flex', alignItems: 'center',
                 height: 52, padding: '0 24px', borderRadius: 14,
-                background: '#fff', border: '1.5px solid #1A3A5C',
-                color: '#1A3A5C', fontSize: 16, fontWeight: 500,
+                background: '#fff', border: '2px solid #1A3A5C',
+                color: '#1A3A5C', fontSize: 16, fontWeight: 700,
                 cursor: 'pointer', fontFamily: 'inherit',
                 transition: 'all 200ms ease',
               }}
@@ -209,6 +210,29 @@ export default function Hero() {
             >
               See how it works ↓
             </button>
+          </motion.div>
+
+          {/* Proof bar */}
+          <motion.div custom={4.5} initial="hidden" animate="visible" variants={fadeUp}
+            style={{
+              display: 'flex', gap: 32, flexWrap: 'wrap', marginTop: 20,
+              paddingTop: 20, borderTop: '1px solid #E4ECF7',
+            }}
+          >
+            {[
+              { num: '847', label: 'listings scanned daily' },
+              { num: '6am',  label: 'digest delivered' },
+              { num: '91%',  label: 'match accuracy' },
+            ].map((s, i, arr) => (
+              <div key={s.label} style={{
+                display: 'flex', flexDirection: 'column',
+                paddingRight: i < arr.length - 1 ? 32 : 0,
+                borderRight: i < arr.length - 1 ? '1px solid #E4ECF7' : 'none',
+              }}>
+                <span style={{ fontSize: 24, fontWeight: 800, color: '#1D9E75', lineHeight: 1 }}>{s.num}</span>
+                <span style={{ fontSize: 11, color: '#9CA3AF', textTransform: 'uppercase', letterSpacing: '0.8px', marginTop: 4 }}>{s.label}</span>
+              </div>
+            ))}
           </motion.div>
 
           {/* Trust strip — item 1 is audience-reactive */}
@@ -233,7 +257,7 @@ export default function Hero() {
           >
             {[
               content.stat1,
-              { num: '8',   label: 'Suburbs monitored' },
+              { num: 'AI-first', label: 'Property scoring' },
               { num: 'Your time', label: 'Daily digest' },
             ].map((s, i, arr) => (
               <div key={s.label} style={{
@@ -250,8 +274,8 @@ export default function Hero() {
 
         {/* RIGHT — phone mockup */}
         <div className="hero-phone-col" style={{ alignItems: 'center', position: 'relative' }}>
-          <div className="animate-float" style={{ position: 'relative' }}>
-            <PhoneMockup width={280}>
+          <div className="animate-float" style={{ position: 'relative', filter: 'drop-shadow(0 32px 64px rgba(29,158,117,0.20))' }}>
+            <PhoneMockup width={320}>
               <div style={{ background: '#1A3A5C', padding: '8px 12px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span style={{ color: '#fff', fontSize: 14, fontWeight: 800 }}>Vestio</span>
                 <div style={{ position: 'relative' }}>
@@ -262,7 +286,7 @@ export default function Hero() {
                 </div>
               </div>
               <div style={{ padding: '8px 8px 4px', display: 'flex', gap: 4, overflowX: 'auto', background: '#fff' }}>
-                {[{ l: '● Domain', c: '#166534', bg: '#F0FDF4', b: '#22C55E' }, { l: '● REA', c: '#C2410C', bg: '#FFF7ED', b: '#EF9F27' }, { l: '● CoreLogic', c: '#166534', bg: '#F0FDF4', b: '#22C55E' }].map(p => (
+                {[{ l: '● Domain', c: '#166534', bg: '#F0FDF4', b: '#22C55E' }, { l: '● Homely', c: '#C2410C', bg: '#FFF7ED', b: '#EF9F27' }, { l: '● Allhomes', c: '#166534', bg: '#F0FDF4', b: '#22C55E' }].map(p => (
                   <span key={p.l} style={{ fontSize: 9, fontWeight: 600, color: p.c, background: p.bg, border: `0.5px solid ${p.b}`, padding: '3px 8px', borderRadius: 10, whiteSpace: 'nowrap' }}>{p.l}</span>
                 ))}
               </div>
